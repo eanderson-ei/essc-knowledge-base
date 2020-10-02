@@ -1,0 +1,7 @@
+data/outputs
+!data/outputs/.keep
+.ipynb_checkpoints
+__pycache__
+.vscode/
+reports/*
+!reports/.keep

@@ -1,0 +1,345 @@
+{"label": "ALT", "pattern": [{"LOWER": "international"}, {"LOWER": "development"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "usg"}], "id": "USG"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "united"}, {"LOWER": "states"}, {"LOWER": "agency"}, {"LOWER": "for"}, {"LOWER": "international"}, {"LOWER": "development"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "u.s."}, {"LOWER": "agency"}, {"LOWER": "for"}, {"LOWER": "international"}, {"LOWER": "development"}, {"LOWER": "(usaid"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "u.s."}, {"LOWER": "agency"}, {"LOWER": "for"}, {"LOWER": "international"}, {"LOWER": "development"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid/colombia"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "united"}, {"LOWER": "states"}, {"LOWER": "agency"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "united"}, {"LOWER": "states"}, {"LOWER": "agency"}, {"LOWER": "for"}, {"LOWER": "international"}, {"LOWER": "development"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "u.s."}, {"LOWER": "government"}], "id": "the United States Government"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid/haiti"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid"}, {"LOWER": "carcep"}], "id": "CARCEP"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid/brazil"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid/el"}, {"LOWER": "salvador"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "u.s."}, {"LOWER": "agency"}, {"LOWER": "for"}, {"LOWER": "international"}, {"LOWER": "development"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "brasil"}], "id": "Brazil"}
+{"label": "ALT", "pattern": [{"LOWER": "brasilia"}], "id": "Brazil"}
+{"label": "ALT", "pattern": [{"LOWER": "u.s."}, {"LOWER": "government"}], "id": "the United States Government"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "us"}, {"LOWER": "agency"}, {"LOWER": "for"}, {"LOWER": "international"}, {"LOWER": "development"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "united"}, {"LOWER": "states"}, {"LOWER": "agency"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "edf"}], "id": "Environmental Defense Fund"}
+{"label": "ALT", "pattern": [{"LOWER": "tetra"}, {"LOWER": "tech"}, {"LOWER": "ard"}], "id": "Tetra Tech"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid/peru"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "peace"}, {"LOWER": "corps"}], "id": "Peace Corps"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid"}, {"LOWER": "colombia"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "us"}, {"LOWER": "government"}], "id": "the United States Government"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "para-agua"}, {"LOWER": "project"}], "id": "PARA-Agua"}
+{"label": "ALT", "pattern": [{"LOWER": "a"}, {"LOWER": "u.s."}, {"LOWER": "department"}, {"LOWER": "of"}, {"LOWER": "agriculture"}, {"LOWER": "(usda"}], "id": "USDA"}
+{"label": "ALT", "pattern": [{"LOWER": "peace"}, {"LOWER": "corps"}, {"LOWER": "volunteers"}], "id": "Peace Corps"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "world"}, {"LOWER": "health"}, {"LOWER": "organization"}], "id": "WHO"}
+{"label": "ALT", "pattern": [{"LOWER": "pro-bosques"}], "id": "Pro-Bosques"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "usaid"}, {"LOWER": "pro-bosques"}], "id": "Pro-Bosques"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid"}, {"LOWER": "pro-bosques"}], "id": "Pro-Bosques"}
+{"label": "ALT", "pattern": [{"LOWER": "pacific"}, {"LOWER": "coast"}], "id": "Pacific Coast"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "usaid"}, {"LOWER": "pro-bosques"}, {"LOWER": "project"}], "id": "Pro-Bosques"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid"}, {"LOWER": "guatemala"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid/guatemala"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "jamaica"}], "id": "Jamaica"}
+{"label": "ALT", "pattern": [{"LOWER": "redd"}], "id": "REDD+"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "us"}, {"LOWER": "forest"}, {"LOWER": "service"}], "id": "USFS"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "forest"}, {"LOWER": "service"}], "id": "USFS"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "u.s."}, {"LOWER": "forest"}, {"LOWER": "service"}], "id": "USFS"}
+{"label": "ALT", "pattern": [{"LOWER": "u.s."}, {"LOWER": "forest"}, {"LOWER": "service"}], "id": "USFS"}
+{"label": "ALT", "pattern": [{"LOWER": "csu"}], "id": "Colorado State University"}
+{"label": "ALT", "pattern": [{"LOWER": "geographic"}, {"LOWER": "information"}, {"LOWER": "systems"}], "id": "GIS"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "european"}, {"LOWER": "union"}], "id": "EU"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "chief"}, {"LOWER": "of"}, {"LOWER": "party"}], "id": "COP"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "united"}, {"LOWER": "nations"}], "id": "UN"}
+{"label": "ALT", "pattern": [{"LOWER": "tetra"}, {"LOWER": "tech"}, {"LOWER": "es"}], "id": "Tetra Tech"}
+{"label": "ALT", "pattern": [{"LOWER": "tetra"}, {"LOWER": "tech"}, {"LOWER": "es"}, {"LOWER": "inc."}], "id": "Tetra Tech"}
+{"label": "ALT", "pattern": [{"LOWER": "u.n."}], "id": "UN"}
+{"label": "ALT", "pattern": [{"LOWER": "cop"}], "id": "COP"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "usaid/lac"}, {"LOWER": "bureau"}], "id": "LAC Bureau"}
+{"label": "ALT", "pattern": [{"LOWER": "lac)"}, {"LOWER": "bureau"}], "id": "LAC Bureau"}
+{"label": "ALT", "pattern": [{"LOWER": "chinchin\u00e1"}, {"LOWER": "(colombia"}], "id": "Chinchin\u00e1 "}
+{"label": "ALT", "pattern": [{"LOWER": "community"}, {"LOWER": "earth"}, {"LOWER": "system"}, {"LOWER": "model"}, {"LOWER": "("}], "id": "Community Earth System Model"}
+{"label": "ALT", "pattern": [{"LOWER": "coca-cola"}, {"LOWER": "brasil"}], "id": "Coca-Cola"}
+{"label": "ALT", "pattern": [{"LOWER": "coca-cola"}, {"LOWER": "brazil"}], "id": "Coca-Cola"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid,"}, {"LOWER": "safe"}, {"LOWER": "platform"}], "id": "SAFE Platform"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "us"}, {"LOWER": "forest"}, {"LOWER": "service"}], "id": "USFS"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "peace"}, {"LOWER": "corps"}], "id": "Peace Corps"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "peace"}, {"LOWER": "corps"}, {"LOWER": "small"}, {"LOWER": "grants"}, {"LOWER": "program"}], "id": "Peace Corps Small Grants Program"}
+{"label": "ALT", "pattern": [{"LOWER": "peace"}, {"LOWER": "corps\u2019"}], "id": "Peace Corps"}
+{"label": "ALT", "pattern": [{"LOWER": "forest"}, {"LOWER": "service"}], "id": "USFS"}
+{"label": "ALT", "pattern": [{"LOWER": "peace"}, {"LOWER": "corps/mexico"}], "id": "Peace Corps"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "forest"}, {"LOWER": "service"}], "id": "USFS"}
+{"label": "ALT", "pattern": [{"LOWER": "usda"}, {"LOWER": "forest"}, {"LOWER": "service"}], "id": "USFS"}
+{"label": "ALT", "pattern": [{"LOWER": "colorado"}, {"LOWER": "state"}, {"LOWER": "university"}, {"LOWER": "(csu"}], "id": "CSU"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "u.s."}, {"LOWER": "forest"}, {"LOWER": "service"}, {"LOWER": "brazil"}, {"LOWER": "program"}, {"LOWER": "team"}], "id": "USFS"}
+{"label": "ALT", "pattern": [{"LOWER": "us"}, {"LOWER": "forest"}, {"LOWER": "service"}], "id": "USFS"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid-brazil"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "aecom"}, {"LOWER": "aecom"}], "id": "AECOM"}
+{"label": "ALT", "pattern": [{"LOWER": "@aecom"}], "id": "AECOM"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid"}, {"LOWER": "brazil"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "usaid"}, {"LOWER": "pro-bosques"}, {"LOWER": "activity"}], "id": "Pro-Bosques"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "securities"}, {"LOWER": "and"}, {"LOWER": "exchange"}, {"LOWER": "commission"}], "id": "SEC"}
+{"label": "ALT", "pattern": [{"LOWER": "brazil"}, {"LOWER": "brazilian"}], "id": "Brazil"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid/esc\u2019s"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "usaid"}, {"LOWER": "eastern"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "u.s."}, {"LOWER": "agency"}, {"LOWER": "for"}, {"LOWER": "international"}, {"LOWER": "development\u2019s"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "advisory"}, {"LOWER": "board"}], "id": "Advisory Board"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "usaid"}, {"LOWER": "local"}, {"LOWER": "capacity"}, {"LOWER": "for"}, {"LOWER": "local"}, {"LOWER": "solutions"}], "id": "Local Capacity for Local Solutions"}
+{"label": "ALT", "pattern": [{"LOWER": "united"}, {"LOWER": "states"}, {"LOWER": "government"}], "id": "the United States Government"}
+{"label": "ALT", "pattern": [{"LOWER": "non"}, {"LOWER": "govermental"}, {"LOWER": "organizations"}], "id": "NGO"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid/peru"}, {"LOWER": "mission"}, {"LOWER": "director"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "colorado"}, {"LOWER": "state"}, {"LOWER": "university"}, {"LOWER": "(csu)"}], "id": "CSU"}
+{"label": "ALT", "pattern": [{"LOWER": "nesdis"}, {"LOWER": "(national"}, {"LOWER": "environmental"}, {"LOWER": "satellite"}], "id": "NESDIS"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid-nasa"}], "id": "NASA"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid/peru"}, {"LOWER": "mission"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "u.s."}, {"LOWER": "agency"}, {"LOWER": "for"}, {"LOWER": "international"}, {"LOWER": "development"}, {"LOWER": "(usaid"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "servir-amazonia"}, {"LOWER": "program"}], "id": "SERVIR-Amazon"}
+{"label": "ALT", "pattern": [{"LOWER": "servir"}, {"LOWER": "amazonia"}], "id": "SERVIR-Amazon"}
+{"label": "ALT", "pattern": [{"LOWER": "wwf-peru"}], "id": "WWF"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "usaid"}, {"LOWER": "international"}, {"LOWER": "development"}, {"LOWER": "agency"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "sustainable"}, {"LOWER": "forest"}, {"LOWER": "management\""}], "id": "Sustainable Forest Management"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "united"}, {"LOWER": "states"}, {"LOWER": "agency"}, {"LOWER": "for"}, {"LOWER": "international"}, {"LOWER": "development\u2019s"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "us"}, {"LOWER": "national"}, {"LOWER": "oceanic"}, {"LOWER": "and"}, {"LOWER": "atmospheric"}, {"LOWER": "administration"}], "id": "NOAA"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid/esc"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "usaid/east"}, {"LOWER": "&"}, {"LOWER": "southern"}, {"LOWER": "caribbean"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "proyecto"}, {"LOWER": "per\u00fa"}, {"LOWER": "bosques"}], "id": "Peru Bosques"}
+{"label": "ALT", "pattern": [{"LOWER": "per\u00fa"}, {"LOWER": "bosques"}], "id": "Peru Bosques"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid/central"}, {"LOWER": "america"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "per\u00fa"}, {"LOWER": "bosques"}, {"LOWER": "project"}], "id": "Peru Bosques"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "u.s."}, {"LOWER": "forest"}, {"LOWER": "service"}], "id": "USFS"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid/per\u00fa"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "united"}, {"LOWER": "states"}, {"LOWER": "forest"}, {"LOWER": "service"}], "id": "USFS"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "united"}, {"LOWER": "states"}, {"LOWER": "agency"}, {"LOWER": "for"}, {"LOWER": "international"}, {"LOWER": "development"}, {"LOWER": "(usaid"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "south"}, {"LOWER": "africa(link"}], "id": "South Africa"}
+{"label": "ALT", "pattern": [{"LOWER": "caribbean"}, {"LOWER": "bureau"}, {"LOWER": "of"}, {"LOWER": "usaid"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "nature"}, {"LOWER": "conservancy\u2019s"}, {"LOWER": "amazon"}], "id": "The Nature Conservancy"}
+{"label": "ALT", "pattern": [{"LOWER": "wwf-us"}], "id": "WWF"}
+{"label": "ALT", "pattern": [{"LOWER": "amazon"}, {"LOWER": "amazona"}], "id": "Amazon"}
+{"label": "ALT", "pattern": [{"LOWER": "tnc"}, {"LOWER": "peru"}], "id": "The Nature Conservancy"}
+{"label": "ALT", "pattern": [{"LOWER": "congress"}], "id": "Congress"}
+{"label": "ALT", "pattern": [{"LOWER": "cites"}, {"LOWER": "appendix"}, {"LOWER": "ii"}], "id": "CITES"}
+{"label": "ALT", "pattern": [{"LOWER": "people"}, {"LOWER": "not"}, {"LOWER": "poaching:"}, {"LOWER": "the"}, {"LOWER": "communities"}], "id": "People Not Poaching"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "american"}, {"LOWER": "council"}, {"LOWER": "on"}, {"LOWER": "education"}, {"LOWER": "(ace"}], "id": "ACE"}
+{"label": "ALT", "pattern": [{"LOWER": "people"}, {"LOWER": "not"}, {"LOWER": "poaching:"}], "id": "People Not Poaching"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid"}, {"LOWER": "central"}, {"LOWER": "america"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid/el"}, {"LOWER": "salvador\u2019s"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "caribbean"}, {"LOWER": "biodiversity"}, {"LOWER": "fund"}], "id": "Caribbean Biodiversity Fund"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid"}, {"LOWER": "madagascar"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "caribbean"}, {"LOWER": "biodiversity"}, {"LOWER": "fund\u2022"}], "id": "Caribbean Biodiversity Fund"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "forestry"}, {"LOWER": "and"}, {"LOWER": "biodiversity"}, {"LOWER": "office"}], "id": "FAB"}
+{"label": "ALT", "pattern": [{"LOWER": "peru"}, {"LOWER": "pro-bosques"}], "id": "Pro-Bosques"}
+{"label": "ALT", "pattern": [{"LOWER": "ltd.\u2022"}, {"LOWER": "sandals"}, {"LOWER": "resorts"}], "id": "Sandals Resorts"}
+{"label": "ALT", "pattern": [{"LOWER": "empowerment"}, {"LOWER": "\u200b\u200b\u200b\u200bpro-bosques"}], "id": "Pro-Bosques"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "caribbean"}, {"LOWER": "biodiversity"}, {"LOWER": "fund"}], "id": "Caribbean Biodiversity Fund"}
+{"label": "ALT", "pattern": [{"LOWER": "agriculture"}, {"LOWER": "research"}, {"LOWER": "service"}], "id": "ARS"}
+{"label": "ALT", "pattern": [{"LOWER": "u.s."}, {"LOWER": "geological"}, {"LOWER": "survey"}], "id": "USGS"}
+{"label": "ALT", "pattern": [{"LOWER": "national"}, {"LOWER": "aeronautics"}, {"LOWER": "and"}, {"LOWER": "space"}, {"LOWER": "administration"}], "id": "NASA"}
+{"label": "ALT", "pattern": [{"LOWER": "u.s."}, {"LOWER": "department"}, {"LOWER": "of"}, {"LOWER": "agriculture"}], "id": "USDA"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "global"}, {"LOWER": "climate"}, {"LOWER": "change"}], "id": "Climate Change"}
+{"label": "ALT", "pattern": [{"LOWER": "clean"}, {"LOWER": "energy:"}], "id": "Clean Energy"}
+{"label": "ALT", "pattern": [{"LOWER": "connexus"}, {"LOWER": "\u2022"}], "id": "Connexus"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "usaid/peace"}, {"LOWER": "corps"}, {"LOWER": "small"}, {"LOWER": "project"}, {"LOWER": "assistance"}, {"LOWER": "agreement"}], "id": "Peace Corps Small Project Assistance Agreement"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "peace"}, {"LOWER": "corps"}, {"LOWER": "volunteer"}, {"LOWER": "coordinator"}, {"LOWER": "(pcvc"}], "id": "Peace Corps"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "u.s."}, {"LOWER": "state"}, {"LOWER": "department"}], "id": "US State Department"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "u.s."}, {"LOWER": "department"}, {"LOWER": "of"}, {"LOWER": "state"}], "id": "US State Department"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid/haiti"}, {"LOWER": "associate"}, {"LOWER": "award"}, {"LOWER": "usaid/"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "us"}, {"LOWER": "state"}, {"LOWER": "department"}], "id": "US State Department"}
+{"label": "ALT", "pattern": [{"LOWER": "areas"}, {"LOWER": "usaid"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid/colombia's"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "\u201cconservation"}, {"LOWER": "landscapes"}, {"LOWER": "program"}], "id": "Conservation Landscapes Program"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid\u2019sinteraction"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "redd)+"}], "id": "REDD+"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid/leds"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "u.s."}, {"LOWER": "department"}, {"LOWER": "of"}, {"LOWER": "the"}, {"LOWER": "interior"}], "id": "DOI"}
+{"label": "ALT", "pattern": [{"LOWER": "xxi"}, {"LOWER": "aecom"}], "id": "AECOM"}
+{"label": "ALT", "pattern": [{"LOWER": "fish"}, {"LOWER": "&"}, {"LOWER": "wildlife"}, {"LOWER": "service"}], "id": "USFWS"}
+{"label": "ALT", "pattern": [{"LOWER": "haitijuly"}], "id": "Haiti"}
+{"label": "ALT", "pattern": [{"LOWER": "doi-"}], "id": "DOI"}
+{"label": "ALT", "pattern": [{"LOWER": "peace"}, {"LOWER": "corps/colombia"}], "id": "Peace Corps"}
+{"label": "ALT", "pattern": [{"LOWER": "nord-est"}], "id": "Nord"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "united"}, {"LOWER": "states"}, {"LOWER": "department"}, {"LOWER": "of"}, {"LOWER": "agriculture"}, {"LOWER": "(usda)"}, {"LOWER": "foreign"}, {"LOWER": "agriculture"}, {"LOWER": "service"}], "id": "USDA"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "united"}, {"LOWER": "states"}, {"LOWER": "department"}, {"LOWER": "of"}, {"LOWER": "agriculture"}, {"LOWER": "(usda"}], "id": "USDA"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "united"}, {"LOWER": "states"}, {"LOWER": "agency"}, {"LOWER": "for"}, {"LOWER": "development"}, {"LOWER": "(usaid"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid"}, {"LOWER": "united"}, {"LOWER": "states"}, {"LOWER": "agency"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "united"}, {"LOWER": "states"}, {"LOWER": "agency"}, {"LOWER": "for"}, {"LOWER": "development"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "united"}, {"LOWER": "states"}, {"LOWER": "government"}], "id": "the United States Government"}
+{"label": "ALT", "pattern": [{"LOWER": "usg"}], "id": "the United States Government"}
+{"label": "ALT", "pattern": [{"LOWER": "redd+;\u2022"}], "id": "REDD+"}
+{"label": "ALT", "pattern": [{"LOWER": "redd+-compatible"}], "id": "REDD+"}
+{"label": "ALT", "pattern": [{"LOWER": "redd"}, {"LOWER": "(reducing"}, {"LOWER": "emissions"}], "id": "REDD+"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid/paraguay"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid/west"}, {"LOWER": "africa"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "chemonics"}, {"LOWER": "international"}], "id": "Chemonics"}
+{"label": "ALT", "pattern": [{"LOWER": "chemonics"}, {"LOWER": "international"}, {"LOWER": "inc"}, {"IS_PUNCT": "True"}], "id": "Chemonics"}
+{"label": "ALT", "pattern": [{"LOWER": "chemonics"}, {"LOWER": "international"}, {"LOWER": "inc."}], "id": "Chemonics"}
+{"label": "ALT", "pattern": [{"LOWER": "ecam"}], "id": "the Amazon Conservation Team ECAM"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid"}, {"IS_PUNCT": "True"}, {"LOWER": "s"}], "id": "USAID"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "deforestation"}], "id": "deforestation"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "conservation"}, {"LOWER": "crime"}], "id": "conservation crime"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "private"}, {"LOWER": "sector"}, {"LOWER": "engagement"}], "id": "private sector engagement"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "plastics"}], "id": "plastics"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "ocean"}, {"LOWER": "plastics"}], "id": "ocean plastics"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "livelihoods"}], "id": "livelihoods"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "indigenous"}, {"LOWER": "peoples"}], "id": "indigenous peoples"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "energy"}, {"LOWER": "auction"}], "id": "energy auction"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "clean"}, {"LOWER": "energy"}], "id": "clean energy"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "illegal"}, {"LOWER": "logging"}], "id": "illegal logging"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "illegal"}, {"LOWER": "fishing"}], "id": "illegal fishing"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "fisheries"}], "id": "fisheries"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "amazon"}, {"LOWER": "vision"}], "id": "Amazon Vision"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "gender"}], "id": "gender"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "women"}], "id": "women"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "vulnerable"}, {"LOWER": "population"}], "id": "vulnerable population"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "wildlife"}, {"LOWER": "trafficking"}], "id": "wildlife trafficking"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "climate"}, {"LOWER": "change"}], "id": "climate change"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "redd+"}], "id": "REDD+"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "innovation"}], "id": "innovation"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "self-reliance"}], "id": "self-reliance"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "conservation"}, {"LOWER": "enterprise"}], "id": "conservation enterprise"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "water"}], "id": "water"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "farming"}], "id": "farming"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "nrm"}], "id": "NRM"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "natural"}, {"LOWER": "resource"}, {"LOWER": "management"}], "id": "natural resource management"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "governance"}], "id": "governance"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "urban"}], "id": "urban"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "great"}, {"LOWER": "power"}, {"LOWER": "competition"}], "id": "Great Power Competition"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "fire"}, {"LOWER": "management"}], "id": "fire management"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "monitoring"}], "id": "monitoring"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "remote"}, {"LOWER": "sensing"}], "id": "remote sensing"}
+{"label": "CUSTOM", "pattern": [{"LOWER": "mining"}], "id": "mining"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "peace"}, {"LOWER": "corps"}, {"LOWER": "colombia"}], "id": "Peace Corps"}
+{"label": "ALT", "pattern": [{"LOWER": "linking"}, {"LOWER": "farmers"}, {"LOWER": "to"}, {"LOWER": "markets,"}, {"LOWER": "decision"}, {"LOWER": "and"}, {"LOWER": "policy"}, {"LOWER": "analysis"}, {"LOWER": "research"}, {"LOWER": "area"}], "id": "Linking Farmers to Markets"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "united"}, {"LOWER": "states"}, {"LOWER": "department"}, {"LOWER": "of"}, {"LOWER": "agriculture"}, {"LOWER": "usda"}], "id": "USDA"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "united"}, {"LOWER": "states"}, {"LOWER": "department"}, {"LOWER": "of"}, {"LOWER": "agriculture"}, {"LOWER": "usda"}], "id": "USDA"}
+{"label": "ALT", "pattern": [{"LOWER": "deloitte"}, {"LOWER": "consulting"}, {"LOWER": "llc"}], "id": "Deloitte Consulting"}
+{"label": "ALT", "pattern": [{"LOWER": "cabinet"}], "id": "D"}
+{"label": "ALT", "pattern": [{"LOWER": "colombia"}, {"LOWER": "colombia"}], "id": "Colombia"}
+{"label": "ALT", "pattern": [{"LOWER": "caribbean"}, {"LOWER": "coast"}], "id": "Caribbean"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "caribbean"}], "id": "Caribbean"}
+{"label": "ALT", "pattern": [{"LOWER": "penn"}, {"LOWER": "state"}, {"LOWER": "penn"}, {"LOWER": "state"}], "id": "Penn State"}
+{"label": "ALT", "pattern": [{"LOWER": "penn"}, {"LOWER": "state's"}], "id": "Penn State"}
+{"label": "ALT", "pattern": [{"LOWER": "eastern"}, {"LOWER": "caribbean"}, {"LOWER": "office"}], "id": "Eastern Caribbean Office"}
+{"label": "ALT", "pattern": [{"LOWER": "carcep"}, {"LOWER": "experiences"}], "id": "CARCEP"}
+{"label": "ALT", "pattern": [{"LOWER": "deloitte"}, {"LOWER": "consulting"}], "id": "Deloitte Consulting"}
+{"label": "ALT", "pattern": [{"LOWER": "united"}, {"LOWER": "states"}, {"LOWER": "agency"}, {"LOWER": "for"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid"}, {"LOWER": "atlas"}], "id": "ATLAS"}
+{"label": "ALT", "pattern": [{"LOWER": "university"}, {"LOWER": "of"}, {"LOWER": "arizona"}], "id": "University of Arizona"}
+{"label": "ALT", "pattern": [{"LOWER": "atlas"}, {"LOWER": "products"}, {"LOWER": "and"}, {"LOWER": "services"}], "id": "ATLAS"}
+{"label": "ALT", "pattern": [{"LOWER": "atlas"}, {"LOWER": "products"}, {"LOWER": "and"}, {"LOWER": "services"}], "id": "ATLAS"}
+{"label": "ALT", "pattern": [{"LOWER": "engendering"}, {"LOWER": "utilities"}, {"LOWER": "engendering"}, {"LOWER": "utilities"}], "id": "Utilities Engendering Utilities"}
+{"label": "ALT", "pattern": [{"LOWER": "tetra"}, {"LOWER": "tech"}, {"LOWER": "esi"}], "id": "Tetra Tech"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "crossboundary"}, {"LOWER": "energy\u2019s"}], "id": "CrossBoundary Energy"}
+{"label": "ALT", "pattern": [{"LOWER": "texas"}], "id": "Texas"}
+{"label": "ALT", "pattern": [{"LOWER": "mexico"}], "id": "Mexico"}
+{"label": "ALT", "pattern": [{"LOWER": "philippines"}], "id": "Phillipines"}
+{"label": "ALT", "pattern": [{"LOWER": "academia"}], "id": "Academia"}
+{"label": "ALT", "pattern": [{"LOWER": "vre"}, {"LOWER": "forecasting"}, {"LOWER": "and"}, {"LOWER": "integration"}], "id": "VRE Forecasting and Integration"}
+{"label": "ALT", "pattern": [{"LOWER": "usaidryan"}, {"LOWER": "kilpatrick"}, {"LOWER": "for"}, {"LOWER": "usaid"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "utilities"}, {"LOWER": "engendering"}, {"LOWER": "utilities"}], "id": "Utilities Engendering Utilities"}
+{"label": "ALT", "pattern": [{"LOWER": "all"}, {"LOWER": "associate"}, {"LOWER": "awards"}], "id": "Associate Awards"}
+{"label": "ALT", "pattern": [{"LOWER": "anti-corruptioncorrupt"}], "id": "Anti-Corruption"}
+{"label": "ALT", "pattern": [{"LOWER": "targeting"}, {"LOWER": "natural"}, {"LOWER": "resource"}, {"LOWER": "corruptionharnessing"}], "id": "Targeting Natural Resource Corruption"}
+{"label": "ALT", "pattern": [{"LOWER": "nrmapplying"}, {"LOWER": "knowledge"}, {"LOWER": "&"}, {"LOWER": "testing"}, {"LOWER": "hypothesespiloting"}], "id": "natural resources management"}
+{"label": "ALT", "pattern": [{"LOWER": "nrm.1"}, {"LOWER": "the"}, {"LOWER": "targeting"}, {"LOWER": "natural"}, {"LOWER": "resource"}, {"LOWER": "corruption"}], "id": "Targeting Natural Resource Corruption"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "targeting"}, {"LOWER": "natural"}, {"LOWER": "resource"}, {"LOWER": "corruption"}], "id": "Targeting Natural Resource Corruption"}
+{"label": "ALT", "pattern": [{"LOWER": "latin-america"}], "id": "Latin America"}
+{"label": "ALT", "pattern": [{"LOWER": "del"}, {"LOWER": "cdes"}], "id": "CDES"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid"}, {"LOWER": "y"}, {"LOWER": "por"}, {"LOWER": "intec"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "militant"}, {"LOWER": "groupsthere"}], "id": "Militant Groups"}
+{"label": "ALT", "pattern": [{"LOWER": "end"}, {"LOWER": "act"}, {"LOWER": "report"}], "id": "END Act"}
+{"label": "ALT", "pattern": [{"LOWER": "section"}, {"LOWER": "301"}, {"LOWER": "of"}, {"LOWER": "the"}, {"LOWER": "end"}, {"LOWER": "act"}], "id": "END Act"}
+{"label": "ALT", "pattern": [{"LOWER": "los"}, {"LOWER": "esfuerzos"}, {"LOWER": "de"}, {"LOWER": "usaid"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "aime?the"}, {"LOWER": "forest-based"}], "id": "AIME"}
+{"label": "ALT", "pattern": [{"LOWER": "el"}, {"LOWER": "enfoque"}, {"LOWER": "geogr\u00e1fico"}, {"LOWER": "de"}, {"LOWER": "aime"}, {"LOWER": "es"}], "id": "AIME"}
+{"label": "ALT", "pattern": [{"LOWER": "amazons"}], "id": "Amazon"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "dominican"}, {"LOWER": "institute"}, {"LOWER": "for"}, {"LOWER": "integral"}, {"LOWER": "development"}, {"LOWER": "iddi"}], "id": "IDDI"}
+{"label": "ALT", "pattern": [{"LOWER": "aime-pe"}], "id": "AIME"}
+{"label": "ALT", "pattern": [{"LOWER": "aime"}, {"LOWER": "mid-term"}, {"LOWER": "evaluation"}, {"LOWER": "report"}], "id": "AIME"}
+{"label": "ALT", "pattern": [{"LOWER": "buen"}, {"LOWER": "vivir"}], "id": "Good Living"}
+{"label": "ALT", "pattern": [{"LOWER": "washington"}, {"LOWER": "dc"}], "id": "Washington D.C."}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "guatemala"}, {"LOWER": "biodiversity"}, {"LOWER": "project"}], "id": "the Guatemala Biodiversity Project"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "guatemala"}, {"LOWER": "biodiversity"}, {"LOWER": "project"}], "id": "the Guatemala Biodiversity Project"}
+{"label": "ALT", "pattern": [{"LOWER": "guatemala"}, {"LOWER": "biodiversity"}, {"LOWER": "project"}], "id": "the Guatemala Biodiversity Project"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "sistema"}, {"LOWER": "guatemalteco"}, {"LOWER": "de"}, {"LOWER": "\u00e1reas"}, {"LOWER": "protegidas"}, {"LOWER": "sigap"}], "id": "SIGAP"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "environmental"}, {"LOWER": "defense"}, {"LOWER": "fund"}], "id": "Environmental Defense Fund"}
+{"label": "ALT", "pattern": [{"LOWER": "aime"}, {"LOWER": "accelerating"}, {"LOWER": "inclusion"}, {"LOWER": "and"}, {"LOWER": "mitigating"}, {"LOWER": "emissions"}], "id": "AIME"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "guatemala"}, {"LOWER": "biodiversity"}, {"LOWER": "project"}], "id": "the Guatemala Biodiversity Project"}
+{"label": "ALT", "pattern": [{"LOWER": "mcdonald"}], "id": "McDonald's"}
+{"label": "ALT", "pattern": [{"LOWER": "el"}, {"LOWER": "marco"}, {"LOWER": "de"}, {"LOWER": "cncg"}], "id": "CNCG"}
+{"label": "ALT", "pattern": [{"LOWER": "a"}, {"LOWER": "non-governmental"}, {"LOWER": "organization"}], "id": "NGO"}
+{"label": "ALT", "pattern": [{"LOWER": "abc-la"}, {"LOWER": "indicators"}], "id": "ABC-LA"}
+{"label": "ALT", "pattern": [{"LOWER": "deloitte"}], "id": "Deloitte Consulting"}
+{"label": "ALT", "pattern": [{"LOWER": "abc-la"}, {"LOWER": "de"}, {"LOWER": "usaid"}, {"LOWER": "dai"}, {"LOWER": "colombia"}, {"LOWER": "financiamiento"}], "id": "ABC-LA"}
+{"label": "ALT", "pattern": [{"LOWER": "per\u00fa"}, {"LOWER": "slide"}], "id": "Per\u00fa"}
+{"label": "ALT", "pattern": [{"LOWER": "colombia"}, {"LOWER": "slide"}, {"LOWER": "number"}], "id": "Colombia"}
+{"label": "ALT", "pattern": [{"LOWER": "women\u2018s"}], "id": "women"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "usaid"}, {"LOWER": "lac"}, {"LOWER": "bureau"}], "id": "LAC Bureau"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "para-agua"}, {"LOWER": "project"}], "id": "PARA-Agua"}
+{"label": "ALT", "pattern": [{"LOWER": "community"}, {"LOWER": "of"}, {"LOWER": "practice\u201d:http"}], "id": "Community of Practice"}
+{"label": "ALT", "pattern": [{"LOWER": "south"}, {"LOWER": "america\u2019s"}], "id": "South America"}
+{"label": "ALT", "pattern": [{"LOWER": "l\u00ednea"}, {"LOWER": "con"}, {"LOWER": "el"}, {"LOWER": "estudio"}, {"LOWER": "de"}, {"LOWER": "pisa"}], "id": "PISA"}
+{"label": "ALT", "pattern": [{"LOWER": "del"}, {"LOWER": "valle"}, {"LOWER": "de"}, {"LOWER": "guatemala"}, {"LOWER": "6"}], "id": "del Valle de Guatemala"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "u.s."}, {"LOWER": "national"}, {"LOWER": "center"}, {"LOWER": "for"}, {"LOWER": "atmospheric"}, {"LOWER": "research"}], "id": "NCAR"}
+{"label": "ALT", "pattern": [{"LOWER": "del"}, {"LOWER": "valle"}, {"LOWER": "de"}, {"LOWER": "guatemala"}, {"LOWER": "guatemala"}], "id": "del Valle de Guatemala"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "inter-governmental"}, {"LOWER": "panel"}, {"LOWER": "on"}], "id": "IPCC"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "intergovernmental"}, {"LOWER": "panel"}, {"LOWER": "on"}], "id": "IPCC"}
+{"label": "ALT", "pattern": [{"LOWER": "sustainable"}, {"LOWER": "development"}, {"LOWER": "goals"}], "id": "SDG"}
+{"label": "ALT", "pattern": [{"LOWER": "del"}, {"LOWER": "valle"}, {"LOWER": "de"}, {"LOWER": "guatemala"}], "id": "del Valle de Guatemala"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "para-"}], "id": "PARA-Agua"}
+{"label": "ALT", "pattern": [{"LOWER": "con"}, {"LOWER": "otros"}, {"LOWER": "proyectos"}, {"LOWER": "de"}, {"LOWER": "usaid"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "guatemala\u2019s"}], "id": "Guatamala"}
+{"label": "ALT", "pattern": [{"LOWER": "peace"}, {"LOWER": "corps\u2019"}], "id": "Peace Corps"}
+{"label": "ALT", "pattern": [{"LOWER": "international"}, {"LOWER": "organization"}, {"LOWER": "for"}, {"LOWER": "standardization"}, {"LOWER": "iso"}], "id": "ISO"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "national"}, {"LOWER": "palm"}, {"LOWER": "oil"}, {"LOWER": "union"}], "id": "the National Palm Oil Union"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "bureau"}, {"LOWER": "for"}, {"LOWER": "latin"}, {"LOWER": "america"}], "id": "LAC Bureau"}
+{"label": "ALT", "pattern": [{"LOWER": "forestry"}, {"LOWER": "and"}, {"LOWER": "biodiversity"}, {"LOWER": "office"}], "id": "FAB"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid"}, {"LOWER": "leds"}, {"LOWER": "project"}], "id": "LEDS"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "guatemala"}, {"LOWER": "leds"}, {"LOWER": "plan"}], "id": "LEDS"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "guatemala"}, {"LOWER": "national"}, {"LOWER": "low"}, {"LOWER": "emissions"}, {"LOWER": "development"}, {"LOWER": "strategies"}], "id": "LEDS"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "u.s."}, {"LOWER": "securities"}, {"LOWER": "and"}, {"LOWER": "exchange"}, {"LOWER": "commission"}], "id": "SEC"}
+{"label": "ALT", "pattern": [{"LOWER": "xxi"}, {"LOWER": "aecom"}], "id": "AECOM"}
+{"label": "ALT", "pattern": [{"LOWER": "un-"}], "id": "UN"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "united"}, {"LOWER": "nation\u2019s"}], "id": "UN"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid"}, {"LOWER": "strategy"}, {"LOWER": "&"}, {"LOWER": "activities"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "chemonics"}, {"LOWER": "home"}, {"LOWER": "office"}], "id": "Chemonics"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "exchange"}, {"LOWER": "of"}, {"LOWER": "information"}], "id": "D"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "u.s."}], "id": "D"}
+{"label": "ALT", "pattern": [{"LOWER": "chapter"}, {"LOWER": "302"}], "id": "D"}
+{"label": "ALT", "pattern": [{"LOWER": "inforegi\u00f3n"}], "id": "D"}
+{"label": "ALT", "pattern": [{"LOWER": "\"nreca"}, {"LOWER": "international"}, {"LOWER": "ltd"}], "id": "NRECA"}
+{"label": "ALT", "pattern": [{"LOWER": "haiti"}, {"LOWER": "of"}, {"LOWER": "nreca"}], "id": "NRECA"}
+{"label": "ALT", "pattern": [{"LOWER": "nreca"}, {"LOWER": "international"}, {"LOWER": "programs"}], "id": "NRECA"}
+{"label": "ALT", "pattern": [{"LOWER": "el"}, {"LOWER": "ppb"}], "id": "PPB"}
+{"label": "ALT", "pattern": [{"LOWER": "el"}, {"LOWER": "ppb"}], "id": "PPB"}
+{"label": "ALT", "pattern": [{"LOWER": "focus"}, {"LOWER": "ceadir"}], "id": "CEADIR"}
+{"label": "ALT", "pattern": [{"LOWER": "ceadir"}, {"LOWER": "supportsabout"}, {"LOWER": "ceadirclimate"}, {"LOWER": "economic"}, {"LOWER": "analysis"}], "id": "CEADIR"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "ceadir"}, {"LOWER": "series"}], "id": "CEADIR"}
+{"label": "ALT", "pattern": [{"LOWER": "br"}, {"LOWER": "319"}, {"LOWER": "highway"}], "id": "BR 319 Highway"}
+{"label": "ALT", "pattern": [{"LOWER": "coca-cola"}, {"LOWER": "brazil"}], "id": "Coca-Cola"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "paz"}, {"LOWER": "river"}], "id": "Paz River"}
+{"label": "ALT", "pattern": [{"LOWER": "people"}, {"LOWER": "not"}, {"LOWER": "poaching:"}], "id": "People Not Poaching"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "clp"}, {"LOWER": "cooperative"}, {"LOWER": "agreement"}], "id": "CLP"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "clp"}, {"LOWER": "number"}], "id": "CLP"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "\u201cconservation"}, {"LOWER": "landscapes"}, {"LOWER": "program"}], "id": "CLP"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "clp"}, {"LOWER": "change"}], "id": "CLP"}
+{"label": "ALT", "pattern": [{"LOWER": "alteration"}, {"LOWER": "iha"}], "id": "IHA"}
+{"label": "ALT", "pattern": [{"LOWER": "smallholder"}, {"LOWER": "agriculture"}, {"LOWER": "and"}], "id": "Smallholder Agriculture"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "terra"}, {"LOWER": "bella"}, {"LOWER": "colombia"}, {"LOWER": "fund"}], "id": "Terra Bella Colombia"}
+{"label": "ALT", "pattern": [{"LOWER": "ac"}, {"LOWER": "ac"}], "id": "AC"}
+{"label": "ALT", "pattern": [{"LOWER": "areas"}, {"LOWER": "usaid"}], "id": "USAID"}
+{"label": "ALT", "pattern": [{"LOWER": "micro"}, {"LOWER": "hydro"}, {"LOWER": "power"}, {"LOWER": "plants"}], "id": "micro hydro power plant"}
+{"label": "ALT", "pattern": [{"LOWER": "thomas"}, {"LOWER": "hentschel"}, {"LOWER": "chemonics"}, {"LOWER": "inc."}], "id": "Chemonics"}
+{"label": "ALT", "pattern": [{"LOWER": "biodiversity"}, {"LOWER": "natural"}, {"LOWER": "wealth"}], "id": "USAID Natural Wealth Program"}
+{"label": "ALT", "pattern": [{"LOWER": "biodiversity"}, {"LOWER": "natural"}, {"LOWER": "wealth"}], "id": "USAID Natural Wealth Program"}
+{"label": "ALT", "pattern": [{"LOWER": "natural"}, {"LOWER": "wealth"}, {"LOWER": "components"}, {"LOWER": "effective"}, {"LOWER": "protection"}, {"LOWER": "of"}, {"LOWER": "priority"}, {"LOWER": "ecosystems"}, {"LOWER": "and"}, {"LOWER": "species"}], "id": "USAID Natural Wealth Program"}
+{"label": "ALT", "pattern": [{"LOWER": "natural"}, {"LOWER": "wealth"}], "id": "USAID Natural Wealth Program"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid"}, {"LOWER": "natural"}, {"LOWER": "wealth"}, {"LOWER": "program"}], "id": "USAID Natural Wealth Program"}
+{"label": "ALT", "pattern": [{"LOWER": "doi-itap"}, {"LOWER": "in-country"}, {"LOWER": "coordinator"}], "id": "DOI-ITAP"}
+{"label": "ALT", "pattern": [{"LOWER": "doi"}, {"LOWER": "bureau"}], "id": "DOI"}
+{"label": "ALT", "pattern": [{"LOWER": "doi-itap"}, {"LOWER": "land"}, {"LOWER": "use"}, {"LOWER": "and"}, {"LOWER": "land"}, {"LOWER": "cover"}, {"LOWER": "change"}], "id": "DOI-ITAP"}
+{"label": "ALT", "pattern": [{"LOWER": "colombian"}, {"LOWER": "gis"}], "id": "GIS"}
+{"label": "ALT", "pattern": [{"LOWER": "doi-itap"}, {"LOWER": "assignment"}], "id": "DOI-ITAP"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "epic"}, {"LOWER": "program"}], "id": "EPIC"}
+{"label": "ALT", "pattern": [{"LOWER": "doi-"}], "id": "DOI"}
+{"label": "ALT", "pattern": [{"LOWER": "abc-la\u2019s"}], "id": "ABC-LA"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "para-agua"}, {"LOWER": "project"}], "id": "PARA-Agua"}
+{"label": "ALT", "pattern": [{"LOWER": "pro-bosques"}], "id": "USAID Pro-Bosques"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "usaid"}, {"LOWER": "pro-bosques"}], "id": "USAID Pro-Bosques"}
+{"label": "ALT", "pattern": [{"LOWER": "usaid"}, {"LOWER": "pro-bosques"}], "id": "USAID Pro-Bosques"}
+{"label": "ALT", "pattern": [{"LOWER": "the"}, {"LOWER": "usaid"}, {"LOWER": "pro-bosques"}, {"LOWER": "project"}], "id": "USAID Pro-Bosques"}
+{"label": "ALT", "pattern": [{"LOWER": "biodiversity"}], "id": "biodiversity"}

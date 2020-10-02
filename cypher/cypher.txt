@@ -1,0 +1,9 @@
+# Get ordered list of tags by sum of relationship strength
+MATCH(n:Tag)-[r]-() 
+RETURN n.name, count(r) as result 
+order by result desc
+
+# Get ordered list of tags by number of relationships
+MATCH(n:Tag)-[r]-() 
+RETURN n.name, count(r) as result 
+order by result desc

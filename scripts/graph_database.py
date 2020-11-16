@@ -53,11 +53,6 @@ def update_summary(title, summary):
     graph.push(report)
            
 
-def add_projects():
-    """add project nodes and relate to reports"""
-    pass
-
-
 def import_projects_db(df, node_columns, project_columns):
     """add projects and associate with reports"""
     # add project nodes

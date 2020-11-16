@@ -29,7 +29,8 @@ project_columns = [
     'Transaction Type',
     'Current Amount',
     'Constant Amount',
-    'Reported Results'
+    'Reported Results',
+    'Description'
 ]
 
 df = pd.read_csv('data/projects.csv', index_col='Project Number')

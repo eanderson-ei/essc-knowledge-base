@@ -104,6 +104,28 @@ RETURN n.name, count(r) as result
 order by result desc
 ```
 
+#### How to create relationships between projects
+
+creates bi-directional relationships between projects where projects have reports that share tags with a property of the number of shared tags
+
+```cypher
+MATCH (p:Project)<-[:ABOUT]-(r:Report)<-[:TAGGED_IN]-(t:Tag)-[:TAGGED_IN]->(r2:Report)-[:ABOUT]->(p2:Project)
+WHERE p['Project Name'] <> p2['Project Name']
+WITH p, p2, COUNT(*) AS count
+CREATE (p)-[r:SHARES_TAGS]->(p2)
+SET r.count = count
+```
+
+### Graph Data Science
+
+#### PageRank
+
+Using the graph data science playground, use PageRank with count as weight property, write to 'pagerank' property
+
+#### Louvain Communities
+
+Using the graph data science playground, use Louvain with count as weight property, write to 'louvain' property
+
 ## 2. Initial Buildout
 
 One the tag system is finalized, the new tags will need to be uploaded to the NLP model and all available documents tagged and saved to a graph database
@@ -293,7 +315,79 @@ new_node = Node('<LABEL>', <id_property>=<>,
                **property_dict)
 ```
 
+#### Query Graph
+
+[Cypher Query Cheatsheet](https://gist.github.com/DaniSancas/1d5265fc159a95ff457b940fc5046887)
+
+To get data from the graph
+
+```python
+results = graph.run("<CYPHER QUERY>")  # returns cursor to stream results
+for result in results:
+    # do something
+```
+
+Instead of streaming results, data can be read to a list of dictionaries 
+
+```python
+results = graph.run(
+    f"""
+    MATCH(n:Node)-[]-()
+    WHERE n.name = "{<name>}"
+    RETURN n.name, n.prop_1, n.prop_2
+    """
+).data()
+# returns:
+[
+    {'n.name': '', 'n.prop_1': '', 'n.prop_2': ''},
+    {'n.name': '', 'n.prop_1': '', 'n.prop_2': ''},
+    ...
+]
+```
+
+If your graph has spaces in the properties, use indexing:
+
+```python
+results = graph.run(
+    f"""
+    MATCH(n:Node)-[]-()
+    WHERE n.name = "{<name>}"
+    RETURN n['my name'], n['my prop_1'], n['my prop_2']
+    """
+).data()
+```
+
+If labels have spaces, use backticks 
+
+```python
+results = graph.run(
+    f"""
+    MATCH(n:`My Node`)-[]-()
+    WHERE n.name = "{<name>}"
+    RETURN n['my name'], n['my prop_1'], n['my prop_2']
+    """
+).data()
+```
+
+If you need relationships from one central node to multiple other nodes, use OPTIONAL MATCH:
+
+```python
+results = graph.run(
+	f"""
+	MATCH(n:Node)-[]-(o:other_node)
+	WHERE n.name="{<name>}"
+	OPTIONAL MATCH (o)-[]-(p)
+	WHERE p:<Label1> OR p:<Label2>
+	RETURN n.name, o.name, labels(p), p.name
+	"""
+).data()
+```
+
+This query gives you nodes with labels Label1 or Label2 related to node with label node that is connected through other_node. Note that in the above example the identifying property for all additional nodes must be the same, namely `name`.
+
 #### Export to DataFrame
+
+Note that nodes may not conform well to pandas expectations, and unexpected errors can occur.
 
 ```python
 df = pd.DataFrame(graph.data("MATCH (a:Person) RETURN a.name, a.born"))

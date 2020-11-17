@@ -268,16 +268,21 @@ This use case example is for a related project for another client. It is aspirat
 
 ## Usage
 
-1. Create a Neo4j database
-2. Open database (should be on port 7...), or update 
-3. Compile pattern file (run `create_pattern_file.py`)
-4. Update location of reports in  auto_tag_generator.py, line 64
+1. Re-create virtual environment (`conda create --name essc-knowledge-base`) (if spacy fails, you may need to downgrade python `conda install python=3.8`)
+2. Download english and spanish models
+   1. `python -m spacy download en_core_web_sm`
+   2. `python -m spacy download es_core_news_sm`
+3. Download 
+4. Create a Neo4j database
+5. Open database (should be on port 7...), or update 
+6. Compile pattern file (run `create_pattern_file.py`)
+7. Update location of reports in  auto_tag_generator.py, line 64
    1. `if f in os.listdir('<reports>')`
    2. (`E:/data/essc-knowledge-base/data/reports_eng`)
-5. Copy project database from google sheet into `data/projects.csv`
-6. Read in project database (run `add_project_db.py`)
-7. Delete bad tags (run `delete_bad_tags.py`)
-8. 
+8. Copy project database from google sheet into `data/projects.csv`
+9. Read in project database (run `add_project_db.py`)
+10. Delete bad tags (run `delete_bad_tags.py`)
+11. 
 
 ## Tips & Tricks
 

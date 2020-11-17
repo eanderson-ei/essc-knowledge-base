@@ -266,6 +266,19 @@ This use case example is for a related project for another client. It is aspirat
 
  **assets/**: icon for GUI
 
+## Usage
+
+1. Create a Neo4j database
+2. Open database (should be on port 7...), or update 
+3. Compile pattern file (run `create_pattern_file.py`)
+4. Update location of reports in  auto_tag_generator.py, line 64
+   1. `if f in os.listdir('<reports>')`
+   2. (`E:/data/essc-knowledge-base/data/reports_eng`)
+5. Copy project database from google sheet into `data/projects.csv`
+6. Read in project database (run `add_project_db.py`)
+7. Delete bad tags (run `delete_bad_tags.py`)
+8. 
+
 ## Tips & Tricks
 
 [Why use conda-forge?](https://stackoverflow.com/questions/39857289/should-conda-or-conda-forge-be-used-for-python-environments) It's not super clear, but may better ensure compatibility if using conda-forge rather than the default channel, and it has more packages than the default channel. You can add the conda-forge channel to your list of channels as the priority channel so that you don't have to constantly type `-c conda-forge`.
@@ -551,7 +564,13 @@ class Person(GraphObject):
  ('Lilly Wachowski', 1967)]
 ```
 
+#### Connect to web hosted database on Aura
 
+Create and account and create your database
+
+Store the credentials in a `json` file in your `secrets/` directory
+
+Copy the connection URI from the database card (under Databases)
 
 ## Learning Resources
 

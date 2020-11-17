@@ -1,13 +1,24 @@
 """save from gui to graph database"""
 from py2neo import Graph, Node, Relationship, NodeMatcher
+from neo4j import GraphDatabase
+import json
 
 
 # database info
-PORT = 'bolt://localhost:7687'
-PASSWORD = 'incentives'
+with open('secrets/aura_creds.json') as f:
+    creds = json.load(f)
+
+URI = creds.get('URI')
+USERNAME = creds.get('USERNAME')
+PASSWORD = creds.get('PASSWORD')
+
+# # for local dev
+# URI = 'bolt://localhost:7687'
+# USERNAME = 'neo4j'
+# PASSWORD = 'incentives'
 
 # connect to database
-graph = Graph(PORT, auth=('neo4j', PASSWORD))
+graph = GraphDatabase.driver(URI, auth=(USERNAME, PASSWORD))
 
 # create matcher
 matcher = NodeMatcher(graph)

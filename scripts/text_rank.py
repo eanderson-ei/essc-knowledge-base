@@ -15,7 +15,7 @@ from spacy.lang.es.stop_words import STOP_WORDS as STOP_WORDS_ES
 STOP_WORDS = STOP_WORDS_EN | STOP_WORDS_ES
 
 nlp = spacy.load("en_core_web_sm")
-ruler = EntityRuler(nlp, overwrite_ents=True).from_disk('data/entity-patterns.jsonl')
+ruler = EntityRuler(nlp, overwrite_ents=True).from_disk('data/inputs/entity-patterns.jsonl')
 nlp.add_pipe(ruler, before="ner")
 
 class TextRank4Keyword():

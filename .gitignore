@@ -5,3 +5,5 @@ __pycache__
 .vscode/
 reports/*
 !reports/.keep
+secrets/*
+!secrets/.keep

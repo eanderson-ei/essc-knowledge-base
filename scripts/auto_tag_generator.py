@@ -6,6 +6,7 @@ from text_rank import TextRank4Keyword
 from text_summary import summarize
 from graph_database import update_tags, update_summary
 
+REPORT_DIR = r'F:\data\essc-knowledge-base\reports_eng'
 
 def read_text(f):
     """converts pdf or txt file to string"""
@@ -54,21 +55,21 @@ def save_tags_to_db(title, text):
     
 
 # open csv
-df = pd.read_csv('data/reports.csv')
+df = pd.read_csv('data/inputs/reports.csv')
 
 # read each file and process
 files = df['Filename']
 
 for f in files:  # .iloc[95:]:  # .sample(4):  
     if isinstance(f, str):
-        if f in os.listdir('reports'):
+        if f in os.listdir(REPORT_DIR):
             print(f'Processing: {f}')
-            filename = os.path.join('reports', f)
+            filename = os.path.join(REPORT_DIR, f)
             text = read_text(filename)
             save_tags_to_db(f, text)
             save_summary_to_db(f, text)
         else:
-            print (f'{f} not found in reports/')
+            print (f'{f} not found in {REPORT_DIR}')
     else:
         print(f'{f} is not a recognized filename')
     

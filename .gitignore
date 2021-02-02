@@ -7,3 +7,4 @@ reports/*
 !reports/.keep
 secrets/*
 !secrets/.keep
+notebooks/

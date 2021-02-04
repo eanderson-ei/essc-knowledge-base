@@ -4,7 +4,7 @@ from tika import parser
 import re
 from text_rank import TextRank4Keyword
 from text_summary import summarize
-from graph_database import update_tags, update_summary
+from graph_database import update_tags, update_summary, update_text
 
 REPORT_DIR = r'F:\data\essc-knowledge-base\reports_eng'
 
@@ -33,7 +33,7 @@ def read_text(f):
 
 
 def save_summary_to_db(title, text):
-    """summarizes and saves to sheet"""    
+    """summarizes and saves to database"""    
     summary = summarize(text)
     if len(summary)>0:
         update_summary(title, summary)
@@ -52,6 +52,15 @@ def save_tags_to_db(title, text):
     else:
         print(f'No keywords identified in {title}')
         update_tags(title)
+
+
+def save_text_to_db(title, text):
+    """saves text"""    
+    if len(text)>0:
+        update_text(title, text)
+    else:
+        print(f'No summary available for {title}')
+        update_text(title, 'No text available')
     
 
 # open csv
@@ -68,6 +77,7 @@ for f in files:  # .iloc[95:]:  # .sample(4):
             text = read_text(filename)
             save_tags_to_db(f, text)
             save_summary_to_db(f, text)
+            # save_text_to_db(f, text)            
         else:
             print (f'{f} not found in {REPORT_DIR}')
     else:

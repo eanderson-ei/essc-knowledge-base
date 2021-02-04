@@ -4,21 +4,22 @@ from neo4j import GraphDatabase
 import json
 
 
-# database info
-with open('secrets/aura_creds.json') as f:
-    creds = json.load(f)
+# # database info
+# with open('secrets/aura_creds.json') as f:
+#     creds = json.load(f)
 
-URI = creds.get('URI')
-USERNAME = creds.get('USERNAME')
-PASSWORD = creds.get('PASSWORD')
+# URI = creds.get('URI')
+# USERNAME = creds.get('USERNAME')
+# PASSWORD = creds.get('PASSWORD')
 
-# # for local dev
-# URI = 'bolt://localhost:7687'
-# USERNAME = 'neo4j'
-# PASSWORD = 'incentives'
+# for local dev
+URI = 'bolt://localhost:7687'
+USERNAME = 'neo4j'
+PASSWORD = 'incentives'
 
 # connect to database
-graph = GraphDatabase.driver(URI, auth=(USERNAME, PASSWORD))
+# graph = GraphDatabase.driver(URI, auth=(USERNAME, PASSWORD))
+graph = Graph(URI, auth=(USERNAME, PASSWORD))
 
 # create matcher
 matcher = NodeMatcher(graph)
@@ -62,6 +63,20 @@ def update_summary(title, summary):
         
     # commit (run as single transaction)
     graph.push(report)
+    
+    
+def update_text(title, text):
+    # match node for report title
+    report = matcher.match('Report', name=title).first()
+    
+    # add summary as property
+    if report:
+        report['text'] = text
+    else:
+        print(f'{report} not found in database')
+        
+    # commit (run as single transaction)
+    graph.push(report)
            
 
 def import_projects_db(df, node_columns, project_columns):
@@ -77,7 +92,7 @@ def import_projects_db(df, node_columns, project_columns):
                        **properties)
         tx.merge(project, 'Project', 'project_number')
     
-    tx.commit()    
+    tx.commit()
     
     # add nodes for project db entities
     tx = graph.begin()
@@ -118,22 +133,24 @@ def relate_projects_to_reports(df, report_properties):
     
     # update properties
     report_dict = df[report_properties].to_dict('index')
-    
+    print('relate begin')
     tx = graph.begin()
     for (project_number, report_name), properties in report_dict.items():
         # add properties
+        print(project_number)
         report = matcher.match('Report', name=report_name).first()
         if report:
             report.update(**properties)
             graph.push(report)
+            print('pushed')
         
         # create relationships
         project = matcher.match('Project', project_number=project_number).first()
-        
         if project and report:
             relationship = Relationship(report, 'ABOUT', project)
             tx.create(relationship)
     tx.commit()
+    print('relate end')
     
     
 def delete_bad_tags(bad_kws):

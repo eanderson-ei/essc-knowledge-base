@@ -6,6 +6,8 @@ This project houses the Latin America & Caribbean (LAC) Environment & Energy S C
 
 Project Epics describe the discrete steps required for buildout, Stories within each Epic describe required components for that Epic.
 
+Try subbing 'bolt+s' for 'neo4j+s'  in the URI with the Aura database.
+
 ### Project Epics
 
 1. [Generate keywords to use as a tagging system from a sample of documents](#1.-tag-system)
@@ -54,6 +56,15 @@ To exclude specific entity types, add them to the not_entity_types in analyze() 
 
 Instead of choosing the top 7 sentences, the top X% of sentences could be chosen ([implementation](https://www.presentslide.in/2019/08/text-summarization-python-spacy-library.html)). In Annual Reports and similar reports that cover many topics, a sentence based summary will not be perfect, but can help the reader understand the type of content included. In some cases, the summaries will even be misleading, connecting un-related topics by placing the sentences near each other. Summarization works best when the report is focused on a single case study.
 
+#### How to extract tags
+
+```cypher
+// TOP TAGS
+MATCH(n:Tag)-[r]-() 
+RETURN n.name, count(r) as result 
+order by result desc
+```
+
 #### How to upload regions, project numbers, and filenames
 
 1. Copy the write ups and reports tab of the Google sheet into a csv, save to `data/`
@@ -95,22 +106,13 @@ Instead of choosing the top 7 sentences, the top X% of sentences could be chosen
    MERGE(f)-[:ABOUT]->(p)
    ```
 
-#### How to extract tags
-
-```cypher
-// TOP TAGS
-MATCH(n:Tag)-[r]-() 
-RETURN n.name, count(r) as result 
-order by result desc
-```
-
 #### How to create relationships between projects
 
 creates bi-directional relationships between projects where projects have reports that share tags with a property of the number of shared tags
 
 ```cypher
 MATCH (p:Project)<-[:ABOUT]-(r:Report)<-[:TAGGED_IN]-(t:Tag)-[:TAGGED_IN]->(r2:Report)-[:ABOUT]->(p2:Project)
-WHERE p['Project Name'] <> p2['Project Name']
+WHERE p['name'] <> p2['name']
 WITH p, p2, COUNT(*) AS count
 CREATE (p)-[r:SHARES_TAGS]->(p2)
 SET r.count = count
@@ -118,13 +120,34 @@ SET r.count = count
 
 ### Graph Data Science
 
+To add the graph data science gallery, open the Graph Apps Gallery from the Open split button and click install under the Graph Data Science Playground. If nothing happens, copy the link that opens when you click the square icon (right-most) and paste into the install file or link bar that comes up when you click the four squares button in the sidebar. You also need to install the APOC library (see Add Plugin card at bottom of Neo4j desktop for the project).
+
+You can then find the Graph Data Science Library in the Open split button. Follow the connection guide to get connected the first time.
+
 #### PageRank
 
-Using the graph data science playground, use PageRank with count as weight property, write to 'pagerank' property
+Using the graph data science playground, use PageRank with the following parameters:
+
+* Label: Project
+* Relationship Type: SHARES_TAGS
+* Relationship Orientation: Natural
+* Weight Property: count
+
+Write results to 'pagerank' property
 
 #### Louvain Communities
 
-Using the graph data science playground, use Louvain with count as weight property, write to 'louvain' property
+Using the graph data science playground, use Louvain with the following parameters:
+
+* Label: Project
+* Relationship Type: SHARES_TAGS
+* Relationship Orientation: Undirected
+* Weight Property: count
+* Seed property: None
+* Intermediate Communities: False
+* Community Node Limit: 50
+
+Write results to 'louvain' property
 
 ## 2. Initial Buildout
 
@@ -227,7 +250,7 @@ A primary use case of the knowledge graph is discovery by exploration of relatio
 
 #### Tech Problems
 
-- [ ] Host interactive graph on the web (Linkurious, GraphGists)
+- [x] Host interactive graph on the web (Linkurious, GraphGists)
 
 ### Use Case Example
 
@@ -282,7 +305,12 @@ This use case example is for a related project for another client. It is aspirat
 8. Copy project database from google sheet into `data/projects.csv`
 9. Read in project database (run `add_project_db.py`)
 10. Delete bad tags (run `delete_bad_tags.py`)
-11. 
+11. upload regions, project numbers, and filenames (see guidance above)
+12. create connections between projects (see guidance above)
+13. run data science algorithms pagerank and louvain on graph (see guidance above)
+14. upload projects database (run `add_project_db.py`)
+
+Note: different machines are parsing the columns with `\n` differently. If you get KeyErrors, it's likely that the column name should be changed from `\n` to `\n\r` or vis versa, print the column names to see.
 
 ## Tips & Tricks
 
@@ -576,6 +604,24 @@ Create and account and create your database
 Store the credentials in a `json` file in your `secrets/` directory
 
 Copy the connection URI from the database card (under Databases)
+
+Use the code below to connect with neo4j
+
+```python
+from neo4j import GraphDatabase
+import json 
+
+with open('secrets/aura_creds.json') as f:
+    creds = json.load(f)
+
+URI = creds.get('URI')
+USERNAME = creds.get('USERNAME')
+PASSWORD = creds.get('PASSWORD')
+
+graph = GraphDatabase.driver(URI, auth=(USERNAME, PASSWORD))
+```
+
+Note that it appears that py2neo does not support the protocol used by Aura. If your app simply queries data from the database with cypher, neo4j is sufficient. If you need more advanced functionality, and don't want to learn neo4j to that extent, check this [stack overflow topic](https://stackoverflow.com/questions/64880029/connect-to-neo4j-aura-cloud-database-with-py2neo) to see if anyone can help.
 
 ## Learning Resources
 

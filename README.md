@@ -2,9 +2,9 @@
 
 This project houses the Latin America & Caribbean (LAC) Environment & Energy S C (ESSC) knowledge base. The knowledge base uses NLP and a graph database to facilitate discovery of Mission projects and related documents.
 
-**TODO**
-
 Project Epics describe the discrete steps required for buildout, Stories within each Epic describe required components for that Epic.
+
+**TODO**
 
 Try subbing 'bolt+s' for 'neo4j+s'  in the URI with the Aura database.
 

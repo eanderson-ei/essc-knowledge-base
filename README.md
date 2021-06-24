@@ -213,6 +213,59 @@ Once the tagging system was refined, tags were exported and any final aggregatio
 
 Use the keyword `DELETE` to id any tags that are spurious. Filter for DELETE (copy into new csv), add the new csv to the project, match any nodes associated with DELETE keyword, and delete.
 
+### Advanced Concepts
+
+#### Acronym/abbreviation detection
+
+USAID uses a slew of acronyms and abbreviations. In formal text (i.e., evaluations) these acronyms are introduced (i.e., artisanal and small scale mining (ASM)). We use an Abbreviation detector from `scispacy` to detect these and add them as entities (using `entity_ids`) to the list of entities before NER. To avoid name collisions, acronyms are not preferred over full text nouns.
+
+#### Coreference resolution
+
+Coreferences are a broader case of acronyms where words like 'He' are replaced by the  name of the person they represent, and words like 'The' are dropped when they only sometimes modify the entity. This is an important step in improving the NER and NEL components of the pipeline. Most co-reference resolution models are implemented as neural nets or other advanced systems that recognize semantics. A few options:
+
+* `neuralcoref` ([link](https://github.com/huggingface/neuralcoref), requires `spacy==2.3`)
+* `graphbrain` ([link](http://graphbrain.net/reference/agents.html#coreference-resolution)): this uses a hypergraph and knowledge agents to detect different types of coreferences
+
+`spacy`'s 'similarity' method also allows for identifying similar mentions of an entity in a text that can be used to disambiguate. My intuition is that combining the `similarlity` method with a graph to identify communities (i.e., circular similar mentions) would be an approach to resolving these conflicts. Similarity by itself can be misleading as different cutoff scores will work better for different entities, and some amount of error is probably unavoidable (i.e., United States and Unites States Agency for International Development). 
+
+#### Named Entity Recognition
+
+`spacy` comes out of the box with a Named Entity Recognition pipeline trained on the OneNote5 corpus, however there are other options as well. Besides training your own (see Named Entity Linking), many other models are trained on wikipedia and so have entity linking capability as well (see Name Entity Linking.)
+
+#### Keyword Extraction
+
+Keyword extraction is a simpler alternative to named entity extraction that looks for keywords in text based on prevalence and importance. There are a few options, including the `text_rank.py` script in `scripts/` and packages `yake` (yet another keyword extractor) and `nltk`. While keyword extraction is not better than NER, it could be used to supplement the provided keyword tags.
+
+#### Named Entity Linking
+
+NEL links entities to a Knowledge Base. This helps to ensure aliases of entities are linked to the same 'real-world' entity and enriches the information available for each entity (esp. when linked to a Knowledge Base like wikipedia).
+
+Wikifiers (the process of linking entities to Wikipedia is known as [Wikification](https://en.wikipedia.org/wiki/Entity_linking))
+
+* Google's Knowledge Graph Search API ([link](https://developers.google.com/knowledge-graph)): allows queries of the Google Knowledge Graph, based on wikipedia. Uses SPARQL to query through RESTful API
+* `wikipedia`: a wikipedia search API and python package
+* http://wikifier.org/ A web-based API (see token in `secrets/wikifier_api.txt`) that returns the Entity, it's properties, and the QID
+* NeuroNER ([link](https://github.com/Franck-Dernoncourt/NeuroNER)): ships with a few other NER models
+* BLINK ([link](https://github.com/facebookresearch/BLINK)): facebook's NER
+
+You can also train your own NER/NEL on a wikipedia dump (jsonified data of entire wikidata, I have a copy on the E:/ Drive). A `spacy` project provides the necessary scripting, you just provide the data (See [here](https://github.com/explosion/projects/tree/master/nel-wikipedia) for a script to train a KnowledgeBase from wikidata and wikipedia  and [here](https://github.com/explosion/projects/tree/v3/pipelines/ner_wikiner) for a script to train a NER from wikidata (which might out-perform the default NER model which is trained on the OneNote5 corpus since we're linking back to a wikidata/wikipedia KB)
+
+#### Relationship Extraction
+
+Thus far, we've simply inferred relationships between projects based on shared tags. Relationship extraction, however, can be much more advanced. For example, a single text could be mined to identify relationships between the entities within it (i.e., LAC is an office of USAID). This type of relationship extraction would result in a knowledge graph for each text, which could then be merged with the projects knowledge graph. That type of graph would provide richer understanding of the relationship between entities and between entities and projects, however would also require a much more robust search engine to make the information meaningful.
+
+![Image for post](https://miro.medium.com/max/905/1*ymxq_lqn1KFWwhbzsT4k8w.png)
+
+*Example relationship extraction graph ([source)](https://towardsdatascience.com/from-text-to-knowledge-the-information-extraction-pipeline-b65e7e30273e).*
+
+#### Topic Matching
+
+Topic matching is an advanced form of search that attempts to match a natural language search with similar entries in a corpus. It would be a great option to expand the functionality of the tagging system if the entire corpus could be uploaded. `Holmes` is a good project for this ([link](https://github.com/msg-systems/holmes-extractor)) and runs on top of `spacy` and `neuralcoref`. In many ways, `holmes` replicates this pipeline on a provided corpus.
+
+SEE [SPACY PROJECTS](https://spacy.io/universe) FOR MORE
+
+BIG CAVEAT: `spacy` recently updated to version 3.0, breaking most of the packages described above. I expect that many of these packages will be updated soon but for now you'll need to select a spacy version that is compatible with all. The biggest change in spacy is how pipelines are set up and matching syntax, so you cu
+
 ## 3. Internal Update and Search
 
 After the initial build out, Izzie will be responsible for (1) responding to search requests and (2) adding new products as they come out. Ultimately, the web interface will be needed to make this available to everyone, but this provides a useful check-in point for ensuring value of the project.

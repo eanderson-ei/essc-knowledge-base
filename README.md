@@ -250,6 +250,32 @@ Wikifiers (the process of linking entities to Wikipedia is known as [Wikificatio
 
 You can also train your own NER/NEL on a wikipedia dump (jsonified data of entire wikidata, I have a copy on the E:/ Drive). A `spacy` project provides the necessary scripting, you just provide the data (See [here](https://github.com/explosion/projects/tree/master/nel-wikipedia) for a script to train a KnowledgeBase from wikidata and wikipedia  and [here](https://github.com/explosion/projects/tree/v3/pipelines/ner_wikiner) for a script to train a NER from wikidata (which might out-perform the default NER model which is trained on the OneNote5 corpus since we're linking back to a wikidata/wikipedia KB)
 
+##### NER WIKINER
+
+I used the spacy project `ner_wikiner` to train a new NER on the wikidata dataset. Note you must have spacy v 3.0 or better.
+
+```
+python -m project clone ner_wikiner  # clone project
+python -m spacy project assets C:\Users\Erik\Documents\_dev\ner_wikiner  # fetch wikidata
+cd ner_wikiner
+python -m spacy project run all  # run training workflow
+```
+
+To use:
+
+```python
+import spacy
+MODEL_PATH = 'training/model-best'
+nlp = spacy.load(MODEL_PATH)
+
+doc = nlp("This is a sentence")
+
+for ent in doc.ents:
+    print(ent.label_, ':', ent.text)
+```
+
+https://blog.codecentric.de/en/2020/11/ner-cli-custom-named-entity-recognition-with-spacy-in-four-lines/
+
 #### Relationship Extraction
 
 Thus far, we've simply inferred relationships between projects based on shared tags. Relationship extraction, however, can be much more advanced. For example, a single text could be mined to identify relationships between the entities within it (i.e., LAC is an office of USAID). This type of relationship extraction would result in a knowledge graph for each text, which could then be merged with the projects knowledge graph. That type of graph would provide richer understanding of the relationship between entities and between entities and projects, however would also require a much more robust search engine to make the information meaningful.

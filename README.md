@@ -8,6 +8,8 @@ Project Epics describe the discrete steps required for buildout, Stories within 
 
 Try subbing 'bolt+s' for 'neo4j+s'  in the URI with the Aura database.
 
+
+
 ### Project Epics
 
 1. [Generate keywords to use as a tagging system from a sample of documents](#1.-tag-system)
@@ -16,6 +18,7 @@ Try subbing 'bolt+s' for 'neo4j+s'  in the URI with the Aura database.
 4. [Host all functionality on a web platform, allow external upload, and user search](#4.-web-platform)
 5. Facilitate discovery of related content though manual graph exploration (asp.)
 6. Dashboard to display metrics on environment and energy activities (asp.)
+7. [Deploy database](https://neo4j.com/developer/guide-cloud-deployment/)
 
 ### Resources
 
@@ -275,6 +278,14 @@ for ent in doc.ents:
 ```
 
 https://blog.codecentric.de/en/2020/11/ner-cli-custom-named-entity-recognition-with-spacy-in-four-lines/
+
+I have not yet tested this on the corpus to see if it does better, however it does not have a knowledge base to connect entities back to.
+
+##### NEL Wikipedia
+
+https://github.com/explosion/projects/tree/master/nel-wikipedia
+
+
 
 #### Relationship Extraction
 
